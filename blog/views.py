@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
-import matlab.engine
+# import matlab.engine
 
 # Create your views here.
 
