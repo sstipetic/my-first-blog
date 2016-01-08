@@ -9,9 +9,9 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 
 def post_list(request):
-    # posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    me = User.objects.get(username = 'admin')
-    posts = Post.objects.filter(author=me).order_by('published_date')
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    # me = User.objects.get(username = 'admin')
+    # posts = Post.objects.filter(author=me).order_by('published_date')
     # eng = matlab.engine.start_matlab()
     # tf = eng.isprime(37)
     # return render(request, 'blog/post_list.html', {'posts': posts, 'tf': tf})
